@@ -1,6 +1,6 @@
 import { Kafka } from "kafkajs";
 
-const brokers = (process.env.KAFKA_BROKERS || "localhost:9094")
+const brokers = (process.env.KAFKA_BROKERS || "localhost:9094,localhost:9095,localhost:9096")
   .split(",")
   .map((s) => s.trim())
   .filter(Boolean);
